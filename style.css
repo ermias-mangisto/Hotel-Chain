@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --background: linear-gradient(to right bottom, #ffffff, #f1f0f1, #e4e1e3, #d7d2d3, #cbc3c3)
+}
+body{
+    
+    
+    background-image:var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero-image {
+    background-image: url(images/dragon-palace-hotel-4534092.jpg);
+width: 98.9vw;
+    background-size: cover;
+  height: 650px;
+position:relative;
+filter: brightness(65%);
+animation-name: hero;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+  }
+  @keyframes hero{
+      0%{filter: brightness(70%);}
+      100%{
+          filter: brightness(170%);
+      }
+  }
+  
+#heroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+  }
+
+  main{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+     
+  }
+.hotelList{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.hotelList img{
+    width: 40%;
+    height: 400px;
+}
+
+#events{
+   display: flex; 
+   flex-wrap: wrap;
+   width:100%;
+}   
+#events article{
+    width: 25%;
+ border:solid 1px black;
+ 
+}
+#events img{
+    width: 300px;
+    height: 200px;
+}
+
+#hotelForm{
+    display: flex;
+    flex-direction: column;
+    
+    width: 40%;
+    height: 50vh;
+    
+}
+#backHotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50vh;
+    font-weight: bold;
+    
+}
+footer{
+    height: 10vh;
+    background-color: rgb(16, 19, 19);
+    color: white;
+}
+@media screen and (max-width:800px){
+
+    main{
+        width:100%
+    }
+    
+    #events article{
+       width: 100%;
+       border: none;
+      text-align: center;
+       
+    }
+    .hotelList{
+display: block;
+    }
+    .hotelList img{
+        width:95%;
+    }
+}

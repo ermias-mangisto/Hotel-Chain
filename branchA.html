@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./styleBranch.css">
+<style>
+    .hero-image {
+    background-image: url(images/shibuyasky-4768679.jpg);
+width: 98.9vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  height: 650px;
+
+filter: brightness(65%);
+animation-name: hero;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
+  }
+
+  @keyframes hero{
+      0%{filter: brightness(70%);}
+      100%{
+          filter: brightness(150%);
+      }
+  }
+  
+#heroText {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+  }
+</style>
+</head>
+<body>
+    
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Gold hotel</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          hotel branches
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="branchA.html">tokyo</a></li>
+                          <li><a class="dropdown-item" href="branchB.html">paris</a></li>
+                          <li><a class="dropdown-item" href="branchC.html">london</a></li>
+                          <li><a class="dropdown-item" href="branchD.html">new-york</a></li>
+                          <li><a class="dropdown-item" href="branchE.html">tel-aviv</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+        </header>
+        <section class="hero-image">
+            <article id= "heroText">
+              <h1> Tokyo Gold</h1>
+              <p> simply the best</p>  
+              
+            
+            </article>
+        </section>
+        <main>
+ 
+       <section id="hotelText">
+           
+        <p> 
+            <h4>Gold hotel chain</h4>
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, sapiente!
+       Eligendi sapiente neque dolor. Adipisci et fuga eveniet rerum veritatis!
+       Voluptatem dicta voluptatibus iusto voluptas cumque velit corrupti perferendis quia?
+       Doloremque consectetur fugit sapiente repudiandae eos provident officiis vero totam!
+       Officia rerum ipsum nisi corrupti provident, soluta ducimus accusamus nesciunt!
+       Iure repudiandae praesentium molestiae cupiditate, asperiores reprehenderit vel! Dolore, sit.
+       Quibusdam similique sapiente deserunt eaque nulla earum qui cupiditate perspiciatis!
+       Quasi eaque error minus. Quasi facilis sit culpa veritatis exercitationem!
+       Dolorum ipsum quae voluptatibus aliquam modi quam possimus, quas repudiandae.
+        </p>
+    </section>
+    
+    
+    <section class="hotelList">
+
+       <article><h2>Tokyo</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, veritatis.
+Pariatur magni animi recusandae. Similique labore quod tenetur eligendi asperiores?
+Ad qui expedita quaerat itaque quia distinctio! Suscipit, ducimus voluptates!
+Sit, doloremque laudantium amet maiores officiis voluptatem neque adipisci quasi?
+Natus impedit in ea quisquam veniam dolor neque? Quibusdam, maiores?
+Accusantium delectus, dolore similique iste aliquam minus autem quasi accusamus.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, veritatis.
+Pariatur magni animi recusandae. Similique labore quod tenetur eligendi asperiores?
+Ad qui expedita quaerat itaque quia distinctio! Suscipit, ducimus voluptates!
+Sit, doloremque laudantium amet maiores officiis voluptatem neque adipisci quasi
+</p>
+<h5>Address :15-17, Toranomon 2-chome, Minato-ku, Tokyo</h5>
+<a href=https://wa.me/81570272335><h6>phone:+8157-028-2335 </h6></a>
+<h5>800$ a night</h5>
+</article>
+<img src="images/istockphoto-904453184-612x612.jpg">
+</section>
+
+
+
+<section id="backHotel" >
+    <h2>you can join us too</h2>
+ <form id="hotelForm" >
+  <label for="full name">full name:</label>
+<input type="text" name="full name">
+<label for="check in">check in date:</label>
+<input type="date" name="check in">
+<label for="check out">check out date:</label>
+<input type="date" name="check out">
+<label for="hotel branch">Hotel Branch :</label>
+
+<button>send</button>
+</form>
+</section>  
+<section id="employee">
+    <h3>employee gallery</h3>     
+    <article>
+    <img src="images/fac1.jpg ">
+    <h5>edward</h5>
+    <p>Lorem ipsum dolor sit.
+    Veniam officiis beatae molestiae.
+    Quae accusamus cupiditate obcaecati.
+    Non ducimus autem magnam!</p>
+</article>
+<article>
+    <img src="images/fac2.jpg">
+    <h5>liam</h5>
+    <p>Lorem ipsum dolor sit.
+        Veniam officiis beatae molestiae.
+        Quae accusamus cupiditate obcaecati.
+        Non ducimus autem magnam!</p>
+</article>
+<article>
+    <img src="images/fac3.jpg">
+    <h5>david</h5>
+    <p>Lorem ipsum dolor sit.
+        Veniam officiis beatae molestiae.
+        Quae accusamus cupiditate obcaecati.
+        Non ducimus autem magnam!</p>
+</article>
+<article>
+    <img src="images/fac4.jpg">
+    <h5>lisa</h5>
+    <p>Lorem ipsum dolor sit.
+        Veniam officiis beatae molestiae.
+        Quae accusamus cupiditate obcaecati.
+        Non ducimus autem magnam!</p>
+</article>
+<article>
+    <img src="images/fac5.jpg">
+    <h5>jacob</h5>
+    <p>Lorem ipsum dolor sit.
+        Veniam officiis beatae molestiae.
+        Quae accusamus cupiditate obcaecati.
+        Non ducimus autem magnam!</p>
+</article>
+<article>
+    <img src="images/fac7.jpg">
+    <h5>mona</h5>
+    <p>Lorem ipsum dolor sit.
+        Veniam officiis beatae molestiae.
+        Quae accusamus cupiditate obcaecati.
+        Non ducimus autem magnam!</p>
+</article>
+</section>
+        </main>
+        
+   
+        <footer>
+            
+        </footer>
+        
+   
+    
+</body>
+</html>
